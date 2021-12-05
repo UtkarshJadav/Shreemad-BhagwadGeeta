@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="horizontalBackground">#6CFAFAFA</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="colorBlack30">#50000000</color>
+    <color name="colorLightBlack">#FF4A4A4A</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorSnackBarErrorBg">#F10303</color>
+    <color name="colorSnackBarErrorText">#FFFFFF</color>
+    <color name="colorSnackBarSuccessBg">#36DF30</color>
+    <color name="colorSnackBarSuccessText">#FFFFFF</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite30">#4DFFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack70">#B3000000</color>
+    <color name="colorLightWhite">#F8F8F8</color>
+
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="hintColorGray">#BAC0C8</color>
+    <color name="termsColorGray">#878787</color>
+    <color name="textColorBlack">#1B1818</color>
+    <color name="textColorLightGray">#BAB7B7</color>
+    <color name="textColorGray">#757678</color>
+
+    <color name="buttonColor">#0DA61B</color>
+    <color name="lightGray">#EDEDED</color>
+    <color name="color_grey">#E5E5E5</color>
+
+
 </resources>
