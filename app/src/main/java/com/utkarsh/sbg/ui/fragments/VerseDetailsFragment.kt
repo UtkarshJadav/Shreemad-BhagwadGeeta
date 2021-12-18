@@ -46,8 +46,8 @@ class VerseDetailsFragment : BaseFragment<FragmentVerseDetailsBinding>() {
         binding.tvVerseText.text = verseDetailsModel?.text?.replace("\n\n", "\n")
         binding.tvVerseTransliteration.text = verseDetailsModel?.transliteration
         binding.tvVerseWordMeanings.text = verseDetailsModel?.wordMeanings?.replace(";",";\n")
-        binding.tvVerseEnglishSummary.text = verseDetailsModel?.translations?.find { it?.authorName == SWAMI_SIVANANDA }?.description
-        binding.tvVerseHindiSummary.text = verseDetailsModel?.translations?.find { it?.authorName == SWAMI_TEJOMAYANANDA }?.description
+        binding.tvVerseEnglishSummary.text = verseDetailsModel?.translations?.find { it?.authorName == SWAMI_SIVANANDA }?.description?.replace("\n\n", "\n")
+        binding.tvVerseHindiSummary.text = verseDetailsModel?.translations?.find { it?.authorName == SWAMI_TEJOMAYANANDA }?.description?.replace("\n\n", "\n")
     }
 
     override fun initListener() {

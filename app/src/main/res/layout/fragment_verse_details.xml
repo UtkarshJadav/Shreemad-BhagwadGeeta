@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.utkarsh.sbg.widget.ApiViewStateConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.utkarsh.sbg.widget.ApiViewStateConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/progressLayout"
@@ -9,16 +8,16 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar_layout"/>
+        layout="@layout/toolbar_layout" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -26,11 +25,13 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvSlug"
+                style="@style/TextView"
+                android:textColor="@color/orange"
                 android:layout_width="match_parent"
-                android:textAlignment="center"
-                android:layout_marginHorizontal="@dimen/_18sdp"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_18sdp"
                 android:layout_marginTop="@dimen/_20sdp"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -38,9 +39,11 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvVerseText"
+                style="@style/TextView"
+                android:textColor="@color/colorBlack"
                 android:layout_width="match_parent"
-                android:layout_marginHorizontal="@dimen/_18sdp"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_18sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -50,10 +53,12 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvVerseTransliteration"
+                style="@style/TextView"
+                android:textColor="@color/colorBlack"
                 android:layout_width="match_parent"
-                android:layout_marginHorizontal="@dimen/_18sdp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -62,10 +67,12 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvVerseWordMeanings"
+                style="@style/TextView"
+                android:textColor="@color/colorBlack"
                 android:layout_width="match_parent"
-                android:layout_marginHorizontal="@dimen/_18sdp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -74,10 +81,12 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvVerseEnglishSummary"
+                style="@style/TextView"
+                android:textColor="@color/colorBlack"
                 android:layout_width="match_parent"
-                android:layout_marginHorizontal="@dimen/_18sdp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -86,16 +95,17 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvVerseHindiSummary"
+                style="@style/TextView"
+                android:textColor="@color/colorBlack"
                 android:layout_width="match_parent"
-                android:layout_marginHorizontal="@dimen/_18sdp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvVerseEnglishSummary"
                 tools:text="\n\n।।1.1।।धृतराष्ट्र ने कहा -- हे संजय ! धर्मभूमि कुरुक्षेत्र में एकत्र हुए युद्ध के इच्छुक (युयुत्सव:) मेरे और पाण्डु के पुत्रों ने क्या किया?\n\n\n\n\n" />
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

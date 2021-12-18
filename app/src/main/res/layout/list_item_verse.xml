@@ -18,6 +18,7 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvSlug"
+            style="@style/TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
@@ -26,21 +27,39 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvVerseInSanskrit"
-            android:layout_width="wrap_content"
+            style="@style/TextView"
+            android:textColor="@color/colorBlack"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
             android:layout_marginVertical="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
             android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toStartOf="@+id/ivIncome"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvSlug"
-            tools:text="धृतराष्ट्र उवाच\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।\nमामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय।।1.1।।\n" />
+            tools:text="धृतराष्ट्र उवाच\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।\nमामकाः" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvVerseInEnglish"
-            android:layout_width="wrap_content"
+            style="@style/TextView"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/ivIncome"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvVerseInSanskrit"
-            tools:text="dhṛitarāśhtra uvācha\ndharma-kṣhetre kuru-kṣhetre samavetā yuyutsavaḥ\nmāmakāḥ pāṇḍavāśhchaiva kimakurvata sañjaya\n" />
+            tools:text="dhṛitarāśhtra uvācha\ndharma-kṣhetre" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:rotation="270"
+            app:layout_constraintBottom_toBottomOf="@+id/tvVerseInSanskrit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvVerseInSanskrit"
+            app:srcCompat="@drawable/ic_go" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

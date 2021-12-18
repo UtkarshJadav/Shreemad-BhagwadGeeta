@@ -49,7 +49,7 @@ class ChaptersDetailsFragment : BaseFragment<FragmentChaptersDetailsBinding>() {
         binding.tvChapterVerses.text = String.format("||%s %s||", chapterDetails?.versesCount.toString(), "Verses")
         binding.tvChapterNameInEnglish.text = chapterDetails?.nameTranslated
         binding.tvChapterMeaningInEnglish.text = chapterDetails?.nameMeaning
-        binding.tvChapterSummaryInEnglish.text = chapterDetails?.chapterSummary
+        binding.tvChapterSummaryInEnglish.text = chapterDetails?.chapterSummary?.replace("\n\n", "\n")
     }
 
     override fun initListener() {

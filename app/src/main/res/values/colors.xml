@@ -29,6 +29,7 @@
     <color name="buttonColor">#0DA61B</color>
     <color name="lightGray">#EDEDED</color>
     <color name="color_grey">#E5E5E5</color>
+    <color name="orange">#FF5722</color>
 
 
 </resources>
