@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.utkarsh.revisecode">
+    package="com.utkarsh.sbg">
 
     <application
         android:allowBackup="false"
@@ -14,7 +14,7 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="m">
         <activity
-            android:name=".MainActivity"
+            android:name="com.utkarsh.sbg.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
