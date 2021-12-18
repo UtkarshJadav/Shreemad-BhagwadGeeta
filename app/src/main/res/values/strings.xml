@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Revise Code</string>
+    <string name="app_name">Shreemad Bhagwad Geeta</string>
 
     <!--Label Text-->
     <string name="label_open_gallery">Open Gallery</string>
@@ -27,4 +27,5 @@
     <string name="button_try_again">Try Again</string>
     <string name="button_refresh">Refresh</string>
     <string name="button_turn_on_internet_connectivity">Turn on internet connectivity</string>
+    <string name="chapters">Chapters</string>
 </resources>

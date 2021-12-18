@@ -3,6 +3,9 @@ package com.utkarsh.sbg.data.remote
 
 import com.utkarsh.sbg.BuildConfig
 import com.utkarsh.sbg.data.local.pref.Preference
+import com.utkarsh.sbg.data.models.ChaptersModel
+import com.utkarsh.sbg.data.models.ChaptersModelItem
+import com.utkarsh.sbg.utils.common.Results
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -20,8 +23,8 @@ class ApiManager(preference: Preference) : Api {
             .addInterceptor { chain ->
                 val request = chain.request().newBuilder()
                     .addHeader(
-                        "Authorization",
-                        "Bearer pass token"
+                        "x-api-key",
+                        "31ca8d858a9bf4920"
                     )
                     .build()
                 return@addInterceptor chain.proceed(request)
@@ -37,6 +40,10 @@ class ApiManager(preference: Preference) : Api {
             .addConverterFactory(MoshiConverterFactory.create())
             .build()
             .create(ApiService::class.java)
+    }
+
+    override suspend fun getChaptersList(): ApiResponse<List<ChaptersModelItem>> {
+        return executeApiHelper { apiService.getChaptersList() }
     }
 }
 

@@ -5,7 +5,7 @@ import androidx.room.Room
 import androidx.viewbinding.BuildConfig
 import com.farmit.data.local.database.RoomDatabase
 import com.farmit.data.local.pref.EncPref
-import com.farmit.data.local.pref.PreferenceManager
+import com.utkarsh.sbg.data.local.pref.PreferenceManager
 import com.utkarsh.sbg.data.local.database.Database
 import com.utkarsh.sbg.data.local.database.DatabaseManager
 import com.utkarsh.sbg.data.local.pref.Preference

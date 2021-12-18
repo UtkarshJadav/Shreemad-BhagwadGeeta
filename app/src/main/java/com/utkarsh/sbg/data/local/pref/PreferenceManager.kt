@@ -1,6 +1,6 @@
-package com.farmit.data.local.pref
+package com.utkarsh.sbg.data.local.pref
 
-import com.utkarsh.sbg.data.local.pref.Preference
+import com.farmit.data.local.pref.EncPref
 
 class PreferenceManager(private val sharedPreferences: EncPref) : Preference {
 
