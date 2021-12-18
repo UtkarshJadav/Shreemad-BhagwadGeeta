@@ -12,8 +12,10 @@
         <entry key="app/src/main/res/layout/dropdown_item.xml" value="0.15833333333333333" />
         <entry key="app/src/main/res/layout/fragment_chapters.xml" value="0.30520833333333336" />
         <entry key="app/src/main/res/layout/fragment_chapters_details.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_verse_details.xml" value="0.26372637263726373" />
         <entry key="app/src/main/res/layout/list_item_chapter.xml" value="0.30520833333333336" />
         <entry key="app/src/main/res/layout/list_item_progress.xml" value="0.15833333333333333" />
+        <entry key="app/src/main/res/layout/list_item_verse.xml" value="0.30520833333333336" />
         <entry key="app/src/main/res/layout/toolbar_layout.xml" value="0.30520833333333336" />
         <entry key="app/src/main/res/layout/view_state_circular_progrss.xml" value="0.30520833333333336" />
         <entry key="app/src/main/res/layout/view_state_horizontal_loading.xml" value="0.30520833333333336" />

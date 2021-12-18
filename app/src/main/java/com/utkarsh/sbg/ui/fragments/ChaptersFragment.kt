@@ -30,7 +30,7 @@ class ChaptersFragment : BaseFragment<FragmentChaptersBinding>() {
 
     private fun setupRecyclerView() {
         chapAdapter = ChaptersAdapter()
-        binding.recyclerView.adapter = chapAdapter
+        binding.recyclerViewChapters.adapter = chapAdapter
     }
 
     override fun initListener() {

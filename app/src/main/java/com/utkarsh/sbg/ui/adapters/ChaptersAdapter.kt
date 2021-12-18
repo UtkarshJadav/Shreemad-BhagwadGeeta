@@ -41,12 +41,12 @@ class ChaptersAdapter(
 
         fun bind(item: ChaptersModelItem) = with(item) {
             binding.tvChapterNumber.text = String.format("%s %s", "Chapter", chapterNumber.toString())
-            binding.tvChapterName.text = translation
+            binding.tvChapterName.text = nameTranslated
             binding.tvChapterNameInHindi.text = name
             binding.tvShloksInChapter.text = String.format("%s %s", versesCount.toString(), "Verses")
-            binding.tvChapterMeaning.text = meaning?.en
-            binding.tvChapterMeaningInHindi.text = meaning?.hi
-            binding.tvChapterSummary.text = summary?.en
+            binding.tvChapterMeaning.text = nameMeaning
+            binding.tvChapterMeaningInHindi.text = nameTransliterated
+            binding.tvChapterSummary.text = chapterSummary
         }
     }
 }

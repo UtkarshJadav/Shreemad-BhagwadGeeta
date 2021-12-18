@@ -24,13 +24,13 @@ android {
         debug {
             shrinkResources false
             minifyEnabled false
-            buildConfigField("String", "BASE_URL", '"https://bhagavadgitaapi.in/"')
+            buildConfigField("String", "BASE_URL", '"https://bhagavad-gita3.p.rapidapi.com/v2/"')
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         release {
             shrinkResources false
             minifyEnabled false
-            buildConfigField("String", "BASE_URL", '"https://bhagavadgitaapi.in/"')
+            buildConfigField("String", "BASE_URL", '"https://bhagavad-gita3.p.rapidapi.com/v2/"')
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

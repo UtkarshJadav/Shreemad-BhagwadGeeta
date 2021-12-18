@@ -16,5 +16,13 @@
     <fragment
         android:id="@+id/chaptersDetailsFragment"
         android:name="com.utkarsh.sbg.ui.fragments.ChaptersDetailsFragment"
-        tools:layout="@layout/fragment_chapters_details" />
+        tools:layout="@layout/fragment_chapters_details" >
+        <action
+            android:id="@+id/action_chaptersDetailsFragment_to_verseDetailsFragment"
+            app:destination="@id/verseDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verseDetailsFragment"
+        android:name="com.utkarsh.sbg.ui.fragments.VerseDetailsFragment"
+        tools:layout="@layout/fragment_verse_details" />
 </navigation>

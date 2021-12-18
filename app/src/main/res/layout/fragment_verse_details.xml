@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.utkarsh.sbg.widget.ApiViewStateConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSlug"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="chapter-1-verse-1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvVerseText"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSlug"
+                tools:text="धृतराष्ट्र उवाच\nधर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।\n\मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय।।1.1।।\n" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvVerseTransliteration"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVerseText"
+                tools:text="dhṛitarāśhtra uvācha\ndharma-kṣhetre kuru-kṣhetre samavetā yuyutsavaḥ\nmāmakāḥ pāṇḍavāśhchaiva kimakurvata sañjaya\n" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvVerseWordMeanings"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVerseTransliteration"
+                tools:text="dhṛitarāśhtraḥ uvācha—Dhritarashtra said;\n dharma-kṣhetre—the land of dharma;\n kuru-kṣhetre—at Kurukshetra;\n samavetāḥ—having gathered;\n yuyutsavaḥ—desiring to fight;\n māmakāḥ—my sons;\n pāṇḍavāḥ—the sons of Pandu;\n cha—and;\n eva—certainly;\n kim—what;\n akurvata—did they do;\n sañjaya—Sanjay\n" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvVerseEnglishSummary"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVerseWordMeanings"
+                tools:text="1.1 Dhritarashtra said  What did my people and the sons of Pandu do when they had assembled\ntogether eager for battle on the holy plain of Kurukshetra, O Sanjaya.\n\n" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvVerseHindiSummary"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVerseEnglishSummary"
+                tools:text="\n\n।।1.1।।धृतराष्ट्र ने कहा -- हे संजय ! धर्मभूमि कुरुक्षेत्र में एकत्र हुए युद्ध के इच्छुक (युयुत्सव:) मेरे और पाण्डु के पुत्रों ने क्या किया?\n\n\n\n\n" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</com.utkarsh.sbg.widget.ApiViewStateConstraintLayout>
