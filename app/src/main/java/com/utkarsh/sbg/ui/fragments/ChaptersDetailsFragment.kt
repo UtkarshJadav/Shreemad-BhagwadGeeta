@@ -1,18 +1,18 @@
 package com.utkarsh.sbg.ui.fragments
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import com.farmit.utils.extention.handleListApiView
 import com.farmit.utils.extention.observeNotNull
-import com.farmit.utils.extention.showSnackBar
-import com.google.android.material.snackbar.Snackbar
+import com.farmit.utils.listener.OnSingleClickListener
 import com.utkarsh.sbg.R
 import com.utkarsh.sbg.common.EXTRA_CHAPTER_DETAILS
 import com.utkarsh.sbg.common.base.BaseFragment
 import com.utkarsh.sbg.data.models.ChaptersModelItem
 import com.utkarsh.sbg.databinding.FragmentChaptersDetailsBinding
-import com.utkarsh.sbg.ui.adapters.ChaptersAdapter
 import com.utkarsh.sbg.ui.adapters.VersesAdapter
 import com.utkarsh.sbg.ui.viewmodels.InfoViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -53,7 +53,17 @@ class ChaptersDetailsFragment : BaseFragment<FragmentChaptersDetailsBinding>() {
     }
 
     override fun initListener() {
+        binding.toolbar.ivBack.setOnClickListener(singleClickListener)
+    }
 
+    private val singleClickListener = object : OnSingleClickListener() {
+        override fun onSingleClick(view: View) {
+            when (view.id) {
+                R.id.ivBack -> {
+                    requireActivity().onBackPressed()
+                }
+            }
+        }
     }
 
     override fun initObserver() {

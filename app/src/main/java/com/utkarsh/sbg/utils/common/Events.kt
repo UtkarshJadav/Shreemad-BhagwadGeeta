@@ -1,4 +1,4 @@
-package com.farmit.utils.common
+package com.utkarsh.sbg.utils.common
 
 object Unauthorized
 

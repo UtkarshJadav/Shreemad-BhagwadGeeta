@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "859995173778",
+    "project_id": "shreemad-bhagwad-geeta-3cb0a",
+    "storage_bucket": "shreemad-bhagwad-geeta-3cb0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859995173778:android:4e420fb3738cd30295474b",
+        "android_client_info": {
+          "package_name": "com.utkarsh.sbg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859995173778-qsqv282slkl3e346cbtdkkjgk8ai2i12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAalLDPI_-4zhcSP_DLH7oVFBDbj-W7-Ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "859995173778-qsqv282slkl3e346cbtdkkjgk8ai2i12.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

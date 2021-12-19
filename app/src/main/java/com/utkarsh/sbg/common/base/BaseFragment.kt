@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 import com.utkarsh.sbg.data.local.pref.Preference
-import com.farmit.utils.common.Unauthorized
+import com.utkarsh.sbg.utils.common.Unauthorized
 import com.utkarsh.sbg.utils.extention.hideKeyboard
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe

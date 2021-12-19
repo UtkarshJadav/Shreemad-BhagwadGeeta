@@ -1,6 +1,7 @@
 package com.utkarsh.sbg.ui.adapters
 
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.farmit.utils.extention.inflate
 import com.utkarsh.sbg.R
@@ -28,22 +29,24 @@ class ChaptersAdapter(
         }
     }
 
-    inner class ViewHolder(private val binding: ListItemChapterBinding) :
+    inner class ViewHolder(val binding: ListItemChapterBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         init {
             binding.root.setOnClickListener {
-                it.navigate(R.id.action_chaptersFragment_to_chaptersDetailsFragment){
+                it.navigate(R.id.action_chaptersFragment_to_chaptersDetailsFragment) {
                     putParcelable(EXTRA_CHAPTER_DETAILS, chaptersList[bindingAdapterPosition])
                 }
             }
         }
 
         fun bind(item: ChaptersModelItem) = with(item) {
-            binding.tvChapterNumber.text = String.format("%s %s", "Chapter", chapterNumber.toString())
+            binding.tvChapterNumber.text =
+                String.format("||%s %s||", "Chapter", chapterNumber.toString())
             binding.tvChapterName.text = nameTranslated
             binding.tvChapterNameInHindi.text = name
-            binding.tvShloksInChapter.text = String.format("%s %s", versesCount.toString(), "Verses")
+            binding.tvShloksInChapter.text =
+                String.format("||%s %s||", versesCount.toString(), "Verses")
             binding.tvChapterMeaning.text = nameMeaning
             binding.tvChapterMeaningInHindi.text = nameTransliterated
             binding.tvChapterSummary.text = chapterSummary

@@ -43,7 +43,7 @@ class VersesAdapter(
         }
 
         fun bind(item: VersesListModelItem) = with(item) {
-            binding.tvSlug.text = slug
+            binding.tvSlug.text = String.format("||%s||", slug)
             binding.tvVerseInSanskrit.text = text?.replace("\n\n", "\n")
             binding.tvVerseInEnglish.text = transliteration
         }

@@ -1,6 +1,6 @@
 package com.utkarsh.sbg.data.remote
 
-import com.farmit.utils.common.Unauthorized
+import com.utkarsh.sbg.utils.common.Unauthorized
 import com.utkarsh.sbg.utils.extention.fromJson
 import com.utkarsh.sbg.utils.common.ErrorModel
 import org.greenrobot.eventbus.EventBus

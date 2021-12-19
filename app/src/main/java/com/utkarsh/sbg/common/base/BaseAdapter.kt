@@ -4,7 +4,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.farmit.utils.extention.inflate
 import com.utkarsh.sbg.R
+import com.utkarsh.sbg.data.local.pref.Preference
 import com.utkarsh.sbg.databinding.ListItemProgressBinding
+import javax.inject.Inject
 
 open class BaseAdapter<T>(private val dataList: ArrayList<T?>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

@@ -26,6 +26,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvChapterNumber"
                 style="@style/TextView"
+                android:textSize="@dimen/_12ssp"
                 android:textColor="@color/orange"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -38,6 +39,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvChapterNameInEnglish"
                 style="@style/TextView"
+                android:textSize="@dimen/_12ssp"
                 android:textColor="@color/colorBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -61,6 +63,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvChapterSummaryInEnglish"
                 style="@style/TextView"
+                android:textSize="@dimen/_12ssp"
                 android:textColor="@color/colorBlack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,6 +79,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvChapterVerses"
                 style="@style/TextView"
+                android:textSize="@dimen/_12ssp"
                 android:textColor="@color/orange"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

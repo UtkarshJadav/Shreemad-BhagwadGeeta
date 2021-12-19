@@ -14,7 +14,7 @@
     <string name="alert_error_selecting_image">Error selecting the image, please try again.</string>
     <string name="alert_message_error">Something went wrong please try after sometime.</string>
     <string name="action_ok">OK</string>
-
+    <string name="default_notification_channel_id">com.utkarsh.sbg</string>
 
     <!--Button Text-->
     <string name="button_yes">Yes</string>
@@ -28,4 +28,5 @@
     <string name="button_refresh">Refresh</string>
     <string name="button_turn_on_internet_connectivity">Turn on internet connectivity</string>
     <string name="chapters">Chapters</string>
+    <string name="jaishreekrishna">|| जय श्री कृष्ण ||</string>
 </resources>

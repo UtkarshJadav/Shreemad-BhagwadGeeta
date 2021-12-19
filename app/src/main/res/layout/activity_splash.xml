@@ -7,15 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".ui.SplashActivity">
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/ivSplashImage"
-        style="@style/TextView"
-        android:text="Shreemad Bhagwad Geeta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:src="@drawable/sbg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvChapterNumber"
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jaishreekrishna"
+        android:textColor="@color/orange"
+        android:layout_marginBottom="@dimen/default_horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </com.utkarsh.sbg.widget.ApiViewStateConstraintLayout>
