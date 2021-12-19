@@ -3,6 +3,7 @@ package com.utkarsh.sbg.ui.adapters
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.farmit.utils.extention.inflate
+import com.farmit.utils.listener.OnSingleClickListener
 import com.utkarsh.sbg.R
 import com.utkarsh.sbg.common.EXTRA_CHAPTER_DETAILS
 import com.utkarsh.sbg.common.EXTRA_VERSE_DETAILS
@@ -15,7 +16,8 @@ import com.utkarsh.sbg.utils.extention.navigate
 
 
 class VersesAdapter(
-    private val versesList: ArrayList<VersesListModelItem?> = arrayListOf()
+    private val versesList: ArrayList<VersesListModelItem?> = arrayListOf(),
+    private val singleClickListener: OnSingleClickListener
 ) : BaseAdapter<VersesListModelItem?>(versesList) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
@@ -35,17 +37,14 @@ class VersesAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         init {
-            binding.root.setOnClickListener {
-                it.navigate(R.id.action_chaptersDetailsFragment_to_verseDetailsFragment){
-                    putParcelable(EXTRA_VERSE_DETAILS, versesList[bindingAdapterPosition])
-                }
-            }
+            binding.cvRootVerse.setOnClickListener(singleClickListener)
         }
 
         fun bind(item: VersesListModelItem) = with(item) {
             binding.tvSlug.text = String.format("||%s||", slug)
             binding.tvVerseInSanskrit.text = text?.replace("\n\n", "\n")
             binding.tvVerseInEnglish.text = transliteration
+            binding.cvRootVerse.tag = bindingAdapterPosition
         }
     }
 }

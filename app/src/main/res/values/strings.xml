@@ -29,4 +29,8 @@
     <string name="button_turn_on_internet_connectivity">Turn on internet connectivity</string>
     <string name="chapters">Chapters</string>
     <string name="jaishreekrishna">|| जय श्री कृष्ण ||</string>
+
+
+    <string name="app_id">ca-app-pub-9578601039790653~5097640829</string>
+    <string name="interstitial_id">ca-app-pub-9578601039790653/9805868563</string>
 </resources>

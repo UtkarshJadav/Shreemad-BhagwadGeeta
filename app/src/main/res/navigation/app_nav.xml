@@ -11,7 +11,11 @@
         tools:layout="@layout/fragment_chapters" >
         <action
             android:id="@+id/action_chaptersFragment_to_chaptersDetailsFragment"
-            app:destination="@id/chaptersDetailsFragment" />
+            app:destination="@id/chaptersDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/chaptersDetailsFragment"
@@ -19,7 +23,11 @@
         tools:layout="@layout/fragment_chapters_details" >
         <action
             android:id="@+id/action_chaptersDetailsFragment_to_verseDetailsFragment"
-            app:destination="@id/verseDetailsFragment" />
+            app:destination="@id/verseDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/verseDetailsFragment"

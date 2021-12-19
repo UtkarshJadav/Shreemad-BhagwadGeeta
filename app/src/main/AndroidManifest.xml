@@ -9,6 +9,7 @@
     <application
         android:name="com.utkarsh.sbg.Application"
         android:allowBackup="false"
+        android:hardwareAccelerated="true"
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -58,6 +59,10 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/orange" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/> <!--sample -->
 
     </application>
 

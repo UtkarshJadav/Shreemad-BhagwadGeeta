@@ -1,19 +1,19 @@
 package com.utkarsh.sbg.ui.adapters
 
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.farmit.utils.extention.inflate
+import com.farmit.utils.listener.OnSingleClickListener
 import com.utkarsh.sbg.R
 import com.utkarsh.sbg.common.EXTRA_CHAPTER_DETAILS
 import com.utkarsh.sbg.common.base.BaseAdapter
 import com.utkarsh.sbg.data.models.ChaptersModelItem
 import com.utkarsh.sbg.databinding.ListItemChapterBinding
-import com.utkarsh.sbg.utils.extention.navigate
 
 
 class ChaptersAdapter(
-    private val chaptersList: ArrayList<ChaptersModelItem?> = arrayListOf()
+    private val chaptersList: ArrayList<ChaptersModelItem?> = arrayListOf(),
+    private val singleClickListener: OnSingleClickListener
 ) : BaseAdapter<ChaptersModelItem?>(chaptersList) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
@@ -33,11 +33,7 @@ class ChaptersAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         init {
-            binding.root.setOnClickListener {
-                it.navigate(R.id.action_chaptersFragment_to_chaptersDetailsFragment) {
-                    putParcelable(EXTRA_CHAPTER_DETAILS, chaptersList[bindingAdapterPosition])
-                }
-            }
+            binding.cvRootChapter.setOnClickListener(singleClickListener)
         }
 
         fun bind(item: ChaptersModelItem) = with(item) {
@@ -50,6 +46,7 @@ class ChaptersAdapter(
             binding.tvChapterMeaning.text = nameMeaning
             binding.tvChapterMeaningInHindi.text = nameTransliterated
             binding.tvChapterSummary.text = chapterSummary
+            binding.cvRootChapter.tag = bindingAdapterPosition
         }
     }
 }
