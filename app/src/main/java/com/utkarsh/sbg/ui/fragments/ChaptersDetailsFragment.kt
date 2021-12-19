@@ -3,7 +3,6 @@ package com.utkarsh.sbg.ui.fragments
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import com.farmit.utils.extention.handleListApiView
 import com.farmit.utils.extention.observeNotNull
@@ -45,7 +44,7 @@ class ChaptersDetailsFragment : BaseFragment<FragmentChaptersDetailsBinding>() {
         setData()
         setupRecyclerView()
 
-        InterstitialAd.load(requireContext(),"ca-app-pub-3940256099942544/1033173712", adRequest, object : InterstitialAdLoadCallback() {
+        InterstitialAd.load(requireContext(), getString(R.string.interstitial_id), adRequest, object : InterstitialAdLoadCallback() {
             override fun onAdFailedToLoad(adError: LoadAdError) {
                 mInterstitialAd = null
             }

@@ -17,20 +17,20 @@ android {
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
-        setProperty("archivesBaseName", "ReviseCode")
+        setProperty("archivesBaseName", "SBG")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         debug {
-            shrinkResources false
-            minifyEnabled false
+            shrinkResources true
+            minifyEnabled true
             buildConfigField("String", "BASE_URL", '"https://bhagavad-gita3.p.rapidapi.com/v2/"')
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         release {
-            shrinkResources false
-            minifyEnabled false
+            shrinkResources true
+            minifyEnabled true
             buildConfigField("String", "BASE_URL", '"https://bhagavad-gita3.p.rapidapi.com/v2/"')
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
